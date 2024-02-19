@@ -1,4 +1,3 @@
-
 /* FILTERBOX-PAGE */
 
 .filter {
@@ -18,21 +17,19 @@
     padding: 20px;
     justify-content: space-between;
   }
-  
+
   &__header__h1 {
     font-size: 1.5rem;
     margin: 0;
     padding-bottom: 30px;
   }
 
-  
   &__closeButtonParent {
     width: 20px;
     height: 30px;
     padding: 10px;
   }
-  
-  
+
   &__closeButton {
     display: flex;
     background: none;
@@ -42,8 +39,7 @@
     width: 100%;
     height: 100%;
   }
-  
-  
+
   &__closeButton span {
     display: block;
     width: 30px;
@@ -54,11 +50,11 @@
     transform: rotate(45deg);
     border-radius: 5px;
   }
-  
+
   &__closeButton span::before,
   &__closeButton span::after {
-    content: '';
-    border-radius: 5px; 
+    content: "";
+    border-radius: 5px;
     width: 30px;
     height: 3px;
     background-color: #312e2e;
@@ -67,11 +63,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   &__closeButton span::before {
     transform: translate(-50%, -50%) rotate(90deg);
   }
-  
+
   &__closeButton span::after {
     transform: translate(-50%, -50%) rotate(-90deg);
   }
@@ -98,19 +94,19 @@
   }
 
   &__selection_h2 {
-  font-size: 18px;
+    font-size: 18px;
   }
 
   &__selection__byrating {
     margin-left: 40px;
 
     @include breakpoint($min-screen-breakpoint) {
-      padding:10px 0 10px 0;
+      padding: 10px 0 10px 0;
       margin: 0;
-    } 
+    }
 
     @include breakpoint($medium-screen-breakpoint) {
-      padding:0 0 10px 40px;
+      padding: 0 0 10px 40px;
       margin: 0;
     }
   }
@@ -146,7 +142,7 @@
       margin: 0;
     }
   }
-  
+
   &__search__input {
     font-size: 20px;
     border: solid grey 2px;
@@ -189,16 +185,15 @@
   &__selection__bytype-2 {
     display: flex;
   }
-  
+
   &__selection__checkbox {
     margin: 0;
-    padding:0;
+    padding: 0;
     cursor: pointer;
   }
-  
+
   &__selection_text {
     margin: 5px;
-    
   }
 
   &__selection__stars {
@@ -226,7 +221,7 @@
     background-image: url("Images/star-empty.svg");
   }
 
-  &__selection__stars__row_1 input:checked~label {
+  &__selection__stars__row_1 input:checked ~ label {
     background-image: url("Images/star-filled.svg");
   }
 
@@ -256,7 +251,7 @@
     background-image: url("Images/star-empty.svg");
   }
 
-  &__selection__stars__row_2 input:checked~label {
+  &__selection__stars__row_2 input:checked ~ label {
     background-image: url("Images/star-filled.svg");
   }
 
@@ -282,14 +277,3 @@
     color: #fff;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
